@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/effort - BaconJeezbrgr.mp3-108a365dae30b1bdd9075c1e0d985ac6.mp3str"
+
+[deps]
+
+source_file="res://Songs/effort - BaconJeezbrgr.mp3"
+dest_files=[ "res://.import/effort - BaconJeezbrgr.mp3-108a365dae30b1bdd9075c1e0d985ac6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
