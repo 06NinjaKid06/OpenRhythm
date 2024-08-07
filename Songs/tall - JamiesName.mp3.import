@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tall - JamiesName.mp3-c3ae52a9fe9ff9c4ccf33ae6296a423d.mp3str"
+
+[deps]
+
+source_file="res://Songs/tall - JamiesName.mp3"
+dest_files=[ "res://.import/tall - JamiesName.mp3-c3ae52a9fe9ff9c4ccf33ae6296a423d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

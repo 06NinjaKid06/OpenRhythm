@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://button_options_scaled_8x_pngcrushed.png" type="Texture" id=1]
+[ext_resource path="res://button_editor_scaled_8x_pngcrushed.png" type="Texture" id=2]
+[ext_resource path="res://button_code_scaled_8x_pngcrushed.png" type="Texture" id=3]
+[ext_resource path="res://button_credits_scaled_8x_pngcrushed.png" type="Texture" id=4]
+[ext_resource path="res://button_exit_scaled_8x_pngcrushed.png" type="Texture" id=5]
+[ext_resource path="res://logo_scaled_8x_pngcrushed.png" type="Texture" id=6]
+[ext_resource path="res://button_go_scaled_8x_pngcrushed.png" type="Texture" id=7]
+[ext_resource path="res://button_listen_scaled_8x_pngcrushed.png" type="Texture" id=8]
+[ext_resource path="res://Songs/harmony - azali.mp3" type="AudioStream" id=9]
+[ext_resource path="res://quit.gd" type="Script" id=10]
+[ext_resource path="res://play.gd" type="Script" id=11]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="LogoScaled8xPngcrushed" type="Sprite" parent="."]
+position = Vector2( 524, 72 )
+scale = Vector2( 0.494048, 0.494048 )
+texture = ExtResource( 6 )
+
+[node name="ButtonGoScaled8xPngcrushed" type="Sprite" parent="."]
+position = Vector2( 530, 169 )
+scale = Vector2( 0.179688, 0.179688 )
+texture = ExtResource( 7 )
+
+[node name="ButtonListenScaled8xPngcrushed" type="Sprite" parent="."]
+position = Vector2( 529, 363 )
+scale = Vector2( 0.179688, 0.179688 )
+texture = ExtResource( 8 )
+
+[node name="ButtonOptionsScaled8xPngcrushed" type="Sprite" parent="."]
+position = Vector2( 531, 236 )
+scale = Vector2( 0.179688, 0.179688 )
+texture = ExtResource( 1 )
+
+[node name="ButtonCreditsScaled8xPngcrushed" type="Sprite" parent="."]
+position = Vector2( 530, 297 )
+scale = Vector2( 0.179688, 0.179688 )
+texture = ExtResource( 4 )
+
+[node name="ButtonCodeScaled8xPngcrushed" type="Sprite" parent="."]
+position = Vector2( 528, 426 )
+scale = Vector2( 0.179688, 0.179688 )
+texture = ExtResource( 3 )
+
+[node name="ButtonEditorScaled8xPngcrushed" type="Sprite" parent="."]
+position = Vector2( 527, 544 )
+scale = Vector2( 0.179688, 0.179688 )
+texture = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -9.0
+autoplay = true
+
+[node name="quitHitbox" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 436.0
+margin_top = 462.0
+margin_right = 620.0
+margin_bottom = 508.0
+script = ExtResource( 10 )
+
+[node name="playHitbox" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 438.0
+margin_top = 146.0
+margin_right = 622.0
+margin_bottom = 192.0
+script = ExtResource( 11 )
+
+[node name="ButtonExitScaled8xPngcrushed" type="Sprite" parent="."]
+position = Vector2( 528, 483 )
+scale = Vector2( 0.179688, 0.179688 )
+texture = ExtResource( 5 )
+
+[connection signal="pressed" from="quitHitbox" to="quitHitbox" method="_on_quitHitbox_pressed"]
+[connection signal="pressed" from="playHitbox" to="playHitbox" method="_on_playHitbox_pressed"]
