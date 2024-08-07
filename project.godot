@@ -10,14 +10,9 @@ config_version=4
 
 [application]
 
-<<<<<<< HEAD
 config/name="OpenRhythm (ALPHA) [v0.2]"
 run/main_scene="res://boot.tscn"
 boot_splash/show_image=false
-=======
-config/name="OpenRhythm (ALPHA) [v0.1]"
-run/main_scene="res://menu.tscn"
->>>>>>> 527c8d44103c23cae5a934e80f4fcd69c1bccde5
 boot_splash/image="res://icon.png"
 config/icon="res://icon.png"
 
@@ -25,14 +20,11 @@ config/icon="res://icon.png"
 
 window/size/resizable=false
 
-<<<<<<< HEAD
 [editor]
 
 version_control_autoload_on_startup=true
 version_control_plugin_name="GitAPI"
 
-=======
->>>>>>> 527c8d44103c23cae5a934e80f4fcd69c1bccde5
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
