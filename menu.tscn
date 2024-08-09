@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://button_options_scaled_8x_pngcrushed.png" type="Texture" id=1]
 [ext_resource path="res://button_editor_scaled_8x_pngcrushed.png" type="Texture" id=2]
@@ -11,6 +11,10 @@
 [ext_resource path="res://Songs/harmony - azali.mp3" type="AudioStream" id=9]
 [ext_resource path="res://quit.gd" type="Script" id=10]
 [ext_resource path="res://play.gd" type="Script" id=11]
+[ext_resource path="res://source.gd" type="Script" id=12]
+[ext_resource path="res://songs.gd" type="Script" id=13]
+[ext_resource path="res://settings.gd" type="Script" id=14]
+[ext_resource path="res://credits.gd" type="Script" id=15]
 
 [node name="Node2D" type="Node2D"]
 
@@ -70,6 +74,72 @@ margin_right = 622.0
 margin_bottom = 192.0
 script = ExtResource( 11 )
 
+[node name="sourceHitbox" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 435.0
+margin_top = 402.0
+margin_right = 619.0
+margin_bottom = 448.0
+script = ExtResource( 12 )
+
+[node name="songsHitbox" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 438.0
+margin_top = 339.0
+margin_right = 622.0
+margin_bottom = 385.0
+script = ExtResource( 13 )
+
+[node name="settingsHitbox" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 440.0
+margin_top = 213.0
+margin_right = 624.0
+margin_bottom = 259.0
+script = ExtResource( 14 )
+
+[node name="WindowDialog" type="WindowDialog" parent="settingsHitbox"]
+margin_left = -52.0
+margin_top = -15.0
+margin_right = 222.0
+margin_bottom = 211.0
+window_title = "Keybinds"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="settingsHitbox/WindowDialog"]
+margin_left = 7.0
+margin_top = 6.0
+margin_right = 267.0
+margin_bottom = 217.0
+text = "idk bro, im still making them!"
+
+[node name="creditsHitbox" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 439.0
+margin_top = 274.0
+margin_right = 623.0
+margin_bottom = 320.0
+script = ExtResource( 15 )
+
+[node name="WindowDialog" type="WindowDialog" parent="creditsHitbox"]
+margin_left = -54.0
+margin_top = -79.0
+margin_right = 220.0
+margin_bottom = 147.0
+window_title = "Credits"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="creditsHitbox/WindowDialog"]
+margin_left = 6.0
+margin_top = 3.0
+margin_right = 266.0
+margin_bottom = 214.0
+text = "Credits go to:
+	NinjaKid - Main Developer
+	AZALI - Song writer
+	JamiesName - Song writer
+	BaconJeezbrgr - Song writer
+	
+	If you want your song removed let me know at connxors@gmail.com, and it will be removed in the next update"
+
 [node name="ButtonExitScaled8xPngcrushed" type="Sprite" parent="."]
 position = Vector2( 528, 483 )
 scale = Vector2( 0.179688, 0.179688 )
@@ -77,3 +147,7 @@ texture = ExtResource( 5 )
 
 [connection signal="pressed" from="quitHitbox" to="quitHitbox" method="_on_quitHitbox_pressed"]
 [connection signal="pressed" from="playHitbox" to="playHitbox" method="_on_playHitbox_pressed"]
+[connection signal="pressed" from="sourceHitbox" to="sourceHitbox" method="_on_sourceHitbox_pressed"]
+[connection signal="pressed" from="songsHitbox" to="songsHitbox" method="_on_songsHitbox_pressed"]
+[connection signal="pressed" from="settingsHitbox" to="settingsHitbox" method="_on_settingsHitbox_pressed"]
+[connection signal="pressed" from="creditsHitbox" to="creditsHitbox" method="_on_creditsHitbox_pressed"]
