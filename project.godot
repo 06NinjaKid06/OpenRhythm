@@ -23,7 +23,7 @@ _global_script_class_icons={
 config/name="OpenRhythm (ALPHA) [v0.2]"
 run/main_scene="res://boot.tscn"
 boot_splash/show_image=false
-boot_splash/image="res://icon.png"
+boot_splash/image="res://logo.png"
 config/icon="res://icon.png"
 
 [display]
