@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/comma.png-5bc8f5200cb50aa7c2ddf748f21fa44a.stex"
+path="res://.import/Suck.png-6bd48926d560c9303b6cbd98531a1492.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://comma.png"
-dest_files=[ "res://.import/comma.png-5bc8f5200cb50aa7c2ddf748f21fa44a.stex" ]
+source_file="res://Songs/Suck.png"
+dest_files=[ "res://.import/Suck.png-6bd48926d560c9303b6cbd98531a1492.stex" ]
 
 [params]
 

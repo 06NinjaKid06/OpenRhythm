@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/comma.png-5bc8f5200cb50aa7c2ddf748f21fa44a.stex"
+path="res://.import/PERFECT.png-bfe1bfd933c30c267da5b79487ab18da.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://comma.png"
-dest_files=[ "res://.import/comma.png-5bc8f5200cb50aa7c2ddf748f21fa44a.stex" ]
+source_file="res://Songs/PERFECT.png"
+dest_files=[ "res://.import/PERFECT.png-bfe1bfd933c30c267da5b79487ab18da.stex" ]
 
 [params]
 

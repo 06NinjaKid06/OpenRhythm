@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/comma.png-5bc8f5200cb50aa7c2ddf748f21fa44a.stex"
+path="res://.import/Better.png-d0c07547ca4d3792dd8c0002ecedd0d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://comma.png"
-dest_files=[ "res://.import/comma.png-5bc8f5200cb50aa7c2ddf748f21fa44a.stex" ]
+source_file="res://Songs/Better.png"
+dest_files=[ "res://.import/Better.png-d0c07547ca4d3792dd8c0002ecedd0d1.stex" ]
 
 [params]
 

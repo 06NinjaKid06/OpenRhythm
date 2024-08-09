@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/comma.png-5bc8f5200cb50aa7c2ddf748f21fa44a.stex"
+path="res://.import/Great.png-2201dac5d3d94d82cb59b3c2d7cb3e05.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://comma.png"
-dest_files=[ "res://.import/comma.png-5bc8f5200cb50aa7c2ddf748f21fa44a.stex" ]
+source_file="res://Songs/Great.png"
+dest_files=[ "res://.import/Great.png-2201dac5d3d94d82cb59b3c2d7cb3e05.stex" ]
 
 [params]
 
