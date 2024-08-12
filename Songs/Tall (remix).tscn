@@ -1,10 +1,112 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Songs/tall - JamiesName.mp3" type="AudioStream" id=1]
+[ext_resource path="res://slash.png" type="Texture" id=1]
+[ext_resource path="res://x.png" type="Texture" id=2]
+[ext_resource path="res://c.png" type="Texture" id=3]
+[ext_resource path="res://comma.png" type="Texture" id=4]
+[ext_resource path="res://period.png" type="Texture" id=5]
+[ext_resource path="res://v.png" type="Texture" id=6]
+[ext_resource path="res://m.png" type="Texture" id=7]
+[ext_resource path="res://Songs/Conductor.tscn" type="PackedScene" id=8]
+[ext_resource path="res://z.png" type="Texture" id=9]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 33, 27.5 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 1 )
-volume_db = -9.0
-autoplay = true
+[node name="Game" type="Node2D"]
+
+[node name="Z" type="Sprite" parent="."]
+position = Vector2( 973, 40 )
+texture = ExtResource( 9 )
+
+[node name="X" type="Sprite" parent="."]
+position = Vector2( 977, 115 )
+texture = ExtResource( 2 )
+
+[node name="C" type="Sprite" parent="."]
+position = Vector2( 976, 188 )
+texture = ExtResource( 3 )
+
+[node name="V" type="Sprite" parent="."]
+position = Vector2( 975, 254 )
+texture = ExtResource( 6 )
+
+[node name="Slash" type="Sprite" parent="."]
+position = Vector2( 981, 560 )
+texture = ExtResource( 1 )
+
+[node name="Period" type="Sprite" parent="."]
+position = Vector2( 982, 495 )
+texture = ExtResource( 5 )
+
+[node name="Comma" type="Sprite" parent="."]
+position = Vector2( 980, 411 )
+texture = ExtResource( 4 )
+
+[node name="M" type="Sprite" parent="."]
+position = Vector2( 983, 351 )
+texture = ExtResource( 7 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 14.0
+margin_top = 281.0
+margin_right = 1006.0
+margin_bottom = 321.0
+text = "Tap the key when the note is on it! You will not be using C, V, M, or COMMA, so just ignore them. DO NOT ignore Z, X, PERIOD, or SLASH however, as you will be using those. This game is recommended to be played with a keyboard."
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 25.0
+margin_top = 650.0
+margin_right = 1017.0
+margin_bottom = 690.0
+text = "hey potential contributor! id like you to know that you shouldnt get rid of anything that seems unnecessary, as this scene is used as a templete for me for other levels. thanks! /NinjaKid"
+
+[node name="Zcollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zcollision"]
+position = Vector2( 974, 46.5 )
+shape = SubResource( 1 )
+
+[node name="Xcollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Xcollision"]
+position = Vector2( 976, 116 )
+shape = SubResource( 1 )
+
+[node name="Ccollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ccollision"]
+position = Vector2( 976, 193 )
+shape = SubResource( 1 )
+
+[node name="Vcollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vcollision"]
+position = Vector2( 976, 254 )
+shape = SubResource( 1 )
+
+[node name="Mcollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mcollision"]
+position = Vector2( 983, 358 )
+shape = SubResource( 1 )
+
+[node name=",collision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent=",collision"]
+position = Vector2( 983, 415 )
+shape = SubResource( 1 )
+
+[node name="dotcollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dotcollision"]
+position = Vector2( 983, 496 )
+shape = SubResource( 1 )
+
+[node name="slashcollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="slashcollision"]
+position = Vector2( 983, 559 )
+shape = SubResource( 1 )
+
+[node name="Conductor" parent="." instance=ExtResource( 8 )]

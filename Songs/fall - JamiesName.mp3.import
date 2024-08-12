@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fall - JamiesName.mp3-780a91c54fb1522703c56d4bd138383a.mp3str"
+
+[deps]
+
+source_file="res://Songs/fall - JamiesName.mp3"
+dest_files=[ "res://.import/fall - JamiesName.mp3-780a91c54fb1522703c56d4bd138383a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

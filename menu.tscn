@@ -8,7 +8,7 @@
 [ext_resource path="res://logo_scaled_8x_pngcrushed.png" type="Texture" id=6]
 [ext_resource path="res://button_go_scaled_8x_pngcrushed.png" type="Texture" id=7]
 [ext_resource path="res://button_listen_scaled_8x_pngcrushed.png" type="Texture" id=8]
-[ext_resource path="res://Songs/harmony - azali.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Songs/fall - JamiesName.mp3" type="AudioStream" id=9]
 [ext_resource path="res://quit.gd" type="Script" id=10]
 [ext_resource path="res://play.gd" type="Script" id=11]
 [ext_resource path="res://source.gd" type="Script" id=12]
